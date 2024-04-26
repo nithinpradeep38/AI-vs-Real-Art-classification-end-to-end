@@ -162,3 +162,5 @@ cython_debug/
 dataset.zip
 artifacts
 
+mlruns
+scores
