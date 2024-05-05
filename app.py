@@ -38,3 +38,5 @@ def predictRoute():
 if __name__ == "__main__":
     ClientApp= ClientApp()
     app.run(host='0.0.0.0', port=8080) # AWS
+
+    #test commit to change docker file name from DockerFile to dockerfile
