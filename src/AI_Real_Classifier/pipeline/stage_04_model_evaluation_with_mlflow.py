@@ -19,7 +19,8 @@ class ModelEvaluationPipeline:
             eval_config= config.get_evaluation_config()
             evaluation= ModelEvaluation(validation_generator=training.validation_generator, config=eval_config)
             evaluation.evaluation()
-            evaluation.log_into_mlflow()
+            #commenting out the below since model is finalized and we are deploying to production.
+            #evaluation.log_into_mlflow() 
 
         except Exception as e:
             raise e
